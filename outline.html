@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边框</title>
+	<style>
+		div{
+			width: 400px;
+			height: 200px;
+			background: green;
+			margin:40px;
+		}
+		div.div1{
+			box-shadow: 0 0 10px #655;
+			outline: 5px solid deeppink;
+		}
+		div.div2{
+			box-shadow: 0 0 10px green;
+			outline: 5px solid  deeppink;
+			outline-offset:-15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+</body>
+</html>
