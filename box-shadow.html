@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边框</title>
+	<style>
+		div{
+			width: 400px;
+			height: 200px;
+			background: green;
+			margin:40px;
+		}
+		div.div1{
+			box-shadow: 0 0 10px #655;
+		}
+		div.div2{
+			box-shadow: 0 0 10px #655,0 0 0 15px deeppink;
+		}
+		div.div3{
+			box-shadow: 0 0 10px #655,0 0 0 15px deeppink,0 2px 5px 15px rgba(0,0,0,.6);
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+</body>
+</html>
