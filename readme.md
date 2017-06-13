@@ -10,3 +10,5 @@ background-position偏移量是跟随默认的 background-origin：padding-box; 
 
 calc() 计算属性 
 
+background：linear-gradient() 背景渐变  指定背景大小 background-size：宽 高；
+
