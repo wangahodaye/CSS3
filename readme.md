@@ -12,3 +12,5 @@ calc() 计算属性
 
 background：linear-gradient() 背景渐变 可以是定任意数量的条纹属性（可以在linear-gradient属性中添加【to right】属性改变文理方向如：横向条纹，纵向条纹）(在linear-gradient属性中添加【xdeg】使其旋转变成斜向纹理)  指定背景大小 background-size：宽 高；
 
+还有更多更复杂的纯css3背景 详见 http://bennettfeely.com/gradients/
+
