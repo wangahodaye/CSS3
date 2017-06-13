@@ -14,3 +14,9 @@ background：linear-gradient() 背景渐变 可以是定任意数量的条纹属
 
 还有更多更复杂的纯css3背景 详见 http://bennettfeely.com/gradients/
 
+border-radius属性 可以指定任意方向角的圆角参数可以是、固定值、百分数、也可以是分数、 该属性常用来做圆形 圆角 椭圆
+
+平行四边形 用transform：skewX（xdeg） 来实现  需要注意的是 该属性变形的是整体。如只需要外部包裹层变形 需要在内部有一个反变形
+
+
+
