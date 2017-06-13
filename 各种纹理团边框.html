@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>渐变背景</title>
+	<style>
+		div.div1{
+			padding: 1em;
+			background-size: cover;
+			background: url(http://www.telegraph.co.uk/content/dam/science/2017/01/06/star1-xlarge_trans_NvBQzQNjv4Bqh52gc_nLzfhcgQM1nRrIBcVgCzS3TmDm2VHKugloyu8.jpg);
+		}
+		div.div1>div{
+			background:#fff;
+			padding: 1em;
+		}
+		div.div2{
+			padding: 1em;
+			border:1em solid transparent;
+			background: linear-gradient(#fff,#fff), url(http://www.telegraph.co.uk/content/dam/science/2017/01/06/star1-xlarge_trans_NvBQzQNjv4Bqh52gc_nLzfhcgQM1nRrIBcVgCzS3TmDm2VHKugloyu8.jpg);
+			background-size: cover;
+			background-clip: padding-box,border-box;
+			background-origin: border-box;
+		}
+		div.div3{
+			padding: 1em;
+			border:1em solid transparent;
+			background: linear-gradient(#fff,#fff) padding-box,
+			repeating-linear-gradient(-45deg,red 0,red 12.5%,transparent 0,transparent 25%,#58a 0,#58a 37.5%,transparent 0,transparent 50%) 0 / 5em 5em;
+		}
+		div.div4{
+			padding: 1em;
+			border:1em solid transparent;
+			background: linear-gradient(#fff,#fff) padding-box,
+			repeating-linear-gradient(-45deg,red 0,red 12.5%,transparent 0,transparent 25%,#58a 0,#58a 37.5%,transparent 0,transparent 50%) 0 / 5em 5em;
+			-webkit-animation: ants 12s linear infinite;
+			-moz-animation: ants 12s linear infinite;
+			-ms-animation: ants 12s linear infinite;
+			-o-animation: ants 12s linear infinite;
+			animation: ants 12s linear infinite;
+			
+		}
+		@keyframes ants {to {background-position: 100%}}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div>
+			<h1>两个div实现 边框背景</h1>
+		</div>
+	</div>
+	<br>
+	<div class="div2">
+		单个元素实现图片背景边框
+	</div>
+	<br>
+	<div class="div3">
+		渐变图像边框
+	</div>
+	<br>
+	<div class="div4">
+		蚂蚁行军渐变图像边框
+	</div>
+</body>
+</html>
