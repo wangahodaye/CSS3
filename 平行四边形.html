@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>平行四边形</title>
+	<style>
+	div.div1{
+		background: #678;
+		transform:skewX(-45deg);
+	}
+	div.div1>div{
+		margin-left: 10px;
+		color:#fff;
+		transform:skewX(45deg);
+	}
+	div.div2{
+		color:#fff;
+		
+		position: relative;
+	}
+	div.div2::before{
+		content: '';
+		position: absolute;
+		top:0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+		background: #678;
+		transform:skewX(-30deg);
+	}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<div>平行四边形</div>
+	</div>
+	<br>
+	<div class="div2">
+		<p>伪元素实现平行四边形</p>
+	</div>
+</body>
+</html>
