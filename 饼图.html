@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>梯形标签</title>
+	<style>
+		div.div1{
+			width: 200px;
+			border-radius: 50%;
+			height: 200px;
+			background: yellowgreen;
+			background-image: linear-gradient(to right,transparent 50%,#655 0);
+		}
+		div.div1::before{
+			content: "";
+			display: block;
+			margin-left: 50%;
+			height: 100%;
+			border-radius: 0 100% 100% 0/50%;
+			background-color: inherit;
+			transform-origin:left;
+			transform:rotate(.3turn);
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		
+	</div>
+</body>
+</html>
