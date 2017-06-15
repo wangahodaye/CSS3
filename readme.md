@@ -24,3 +24,7 @@ border-radius属性 可以指定任意方向角的圆角参数可以是、固定
 
 网页中切角很常见实现方式使用linear-gardent属性指定切角方向  
 
+transform属性可以实现很多的形变效果，放大缩小scale（），旋转routate（），扭曲skew（），2D变换perspective（）可以实现梯形
+
+利用伪元素和形变transform属性可以实现饼图  例子：饼图
+
